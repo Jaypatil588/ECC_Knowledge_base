@@ -108,8 +108,11 @@ Documents Referred:
         return jsonify({"error": str(e)}), 500
 
 # Define the main endpoint for processing user queries
-@app.route('/bot', methods=['POST'])
+@app.route('/bot', methods=['POST', 'OPTIONS'])
 def get_response():
+    if request.method == 'OPTIONS':
+        return ('', 204)
+
     # Get the JSON data from the request body
     data = request.get_json()
     if not data or 'query' not in data:
@@ -128,6 +131,14 @@ def get_response():
         return generateResponse(query,vector_store_id)
     else:
         return jsonify({"response": "Sorry, i cannot help you with that!"})
+
+# Apply permissive CORS headers to all responses
+@app.after_request
+def apply_cors_headers(response):
+    response.headers['Access-Control-Allow-Origin'] = '*'
+    response.headers['Access-Control-Allow-Methods'] = 'POST, OPTIONS'
+    response.headers['Access-Control-Allow-Headers'] = 'Content-Type'
+    return response
 
 # Define a health check endpoint, default
 @app.route('/')
