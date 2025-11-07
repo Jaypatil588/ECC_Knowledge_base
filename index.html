@@ -321,14 +321,15 @@
                 const data = await response.json();
                 console.log(data);
                 removeTypingIndicator();
-                appendMessage('assistant', data.response);
-                updateSourceWindow(data.response);
+                const { content, sources } = processAssistantResponse(data.response);
+                appendMessage('assistant', content);
+                updateSourceWindow(sources);
 
             } catch (error) {
                 console.error('Error fetching response:', error);
                 removeTypingIndicator();
                 appendMessage('assistant', 'Sorry, an error occurred. Please try again.');
-                updateSourceWindow('');
+                updateSourceWindow([]);
             }
         };
 
@@ -374,7 +375,30 @@
             }
         };
 
-        const updateSourceWindow = (assistantText) => {
+        const processAssistantResponse = (text) => {
+            if (!text) {
+                return { content: '', sources: [] };
+            }
+
+            const splitMarker = 'Documents Referred:';
+            const markerIndex = text.lastIndexOf(splitMarker);
+
+            if (markerIndex === -1) {
+                return { content: text.trim(), sources: [] };
+            }
+
+            const content = text.slice(0, markerIndex).trim();
+            const sourceSection = text.slice(markerIndex + splitMarker.length).trim();
+
+            const sources = sourceSection
+                .split('\n')
+                .map((line) => line.replace(/^[\-\*\u2022]+\s*/, '').trim())
+                .filter(Boolean);
+
+            return { content, sources };
+        };
+
+        const updateSourceWindow = (sources) => {
             if (!sourceWindow) return;
 
             const fragment = document.createDocumentFragment();
@@ -384,28 +408,9 @@
                 }
             };
 
-            const extractSources = (text) => {
-                if (!text) return [];
-                const splitMarker = 'Documents Referred:';
-                const markerIndex = text.lastIndexOf(splitMarker);
-                if (markerIndex === -1) return [];
-
-                const sourceSection = text
-                    .slice(markerIndex + splitMarker.length)
-                    .trim();
-
-                const lines = sourceSection
-                    .split('\n')
-                    .map((line) => line.replace(/^[\-\*\u2022]+\s*/, '').trim())
-                    .filter(Boolean);
-
-                return lines;
-            };
-
-            const sources = extractSources(assistantText);
             cleanPanel();
 
-            if (!sources.length) {
+            if (!sources || !sources.length) {
                 const emptyMessage = document.createElement('p');
                 emptyMessage.className = 'source-empty-message';
                 emptyMessage.textContent = 'No source documents were cited for the latest response.';
