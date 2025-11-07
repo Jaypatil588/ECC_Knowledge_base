@@ -84,6 +84,7 @@ Documents Referred:
 
 
     try:
+        app.logger.info("Generating response for query: %s", query)
         response = client.responses.create(
             model=gpt_model,
             input=query,
@@ -101,12 +102,15 @@ Documents Referred:
         message_text = next((item.content[0].text for item in response.output if item.type == 'message'), None) # type: ignore
 
         if message_text:
+            app.logger.info("Response generated successfully for query.")
             return jsonify({"response": message_text})
         else:
+            app.logger.error("Response missing message text for query.")
             return jsonify({"response": "Error in generating response."}), 500
 
     except Exception as e:
         # Handle potential API errors
+        app.logger.exception("Error generating response: %s", e)
         return jsonify({"error": str(e)}), 500
 
 # Define the main endpoint for processing user queries
