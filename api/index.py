@@ -1,3 +1,24 @@
+from datetime import datetime, timezone
+from typing import Any, Dict
+
+
+def handler(request: Any) -> Dict[str, Any]:
+    """
+    Sample endpoint served at `/` (rewritten via vercel.json) that verifies server-side
+    execution within the Vercel deployment.
+    """
+    return {
+        "statusCode": 200,
+        "headers": {
+            "Content-Type": "application/json",
+            "Cache-Control": "no-store, max-age=0",
+        },
+        "body": (
+            '{"ok": true, "message": "index handler pong", "timestamp": "'
+            + datetime.now(timezone.utc).isoformat()
+            + '"}'
+        ),
+    }
 from flask import Flask, request, jsonify
 from openai import OpenAI
 import os
