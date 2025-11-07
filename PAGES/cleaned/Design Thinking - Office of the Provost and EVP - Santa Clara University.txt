@@ -1,0 +1,322 @@
+SCU Home <https://www.scu.edu/>
+  * Faculty & Staff <https://www.scu.edu/faculty-and-staff/>
+  * Offices & Services <https://www.scu.edu/services/>
+  * Schools & Centers <https://www.scu.edu/centers/>
+
+Core Curriculum
+
+
+  Design Thinking
+
+ 1. Home <https://www.scu.edu/>
+ 2. Office of the Provost and EVP <https://www.scu.edu/provost/>
+ 3. Core Curriculum <https://www.scu.edu/provost/core/>
+ 4. Integrations <https://www.scu.edu/provost/core/integrations/>
+ 5. Pathways <https://www.scu.edu/provost/core/integrations/pathways/>
+ 6. Pathway Listings & Courses <https://www.scu.edu/provost/core/
+    integrations/pathways/pathway-listings--courses/>
+ 7. Design Thinking
+
+
+    Design Thinking
+
+*Facilitator: Christopher Kitts, Mechanical Engineering*
+
+Design thinking provides a holistic approach to the development of new
+products and processes, emphasizing the creative, interdisciplinary
+synthesis of new systems that can lead to solutions for real problems.
+Important aspects of design thinking include the innovative application
+of technology as well as the need to harness such innovation in a
+sustainable enterprise. Design thinking may be applied to a vast range
+of problems, from designing a new consumer product, to adapting a device
+for low-cost and local production in the developing world, to solving
+global issues such as climate change and health care. This pathway is
+open to all students and invites them to discover the many elements of
+design thinking. The topic may be explored from a wide range of
+perspectives, such as those characteristic of the arts, humanities,
+sciences, social sciences, business, and engineering.
+
+
+        *Associated Courses*
+
+Foundations Courses (ENGL)
+(Please note that only the specific Foundation course topics qualify for
+the Pathway requirements, and only one Foundations course may be applied
+to a Pathway)
+2A Composing a Sustainable World (effective 3/25/19)
+2A Science, Ethics, & Society (effective 9/1/09)
+2A Science, Technology, Self (effective 9/1/09)
+2A/H Technology & Cultural Knowledge (effective 9/1/09)
+2A/H Writing about Sustainability (effective 9/1/09)
+
+Arts (ARTS)
+32 2D Fundamentals (effective 9/1/25)
+36 Ditto! The Technology of Print (effective 1/1/19)
+*70 Graphic Design: Typography (effective 9/1/21)
+72 Digital Art and Design Basics (effective 9/1/09)
+74 Basic Digital Imaging (effective 9/1/09)
+*75 Brand Identity: Basic Graphic Design (effective 9/1/09)
+*155 Photography in the Community (effective 1/1/21)
+*174 Intermediate Digital Imaging (effective 9/1/09)
+*175 Information Design: Graphic Design (effective 9/1/20)
+*177 Website Graphic Design (effective 9/1/09)
+
+Anthropology (ANTH)
+50 World Geography (cross-listed with ENVS 50; effective 9/1/19)
+
+Art History (ARTH)
+*66 Fabricating Nature E Asia (cross-listed with RSOC 66; effective 9/1/22)
+*167 Cityscapes, Past and Present (effective 03/25/22)
+
+Bioengineering (BIOE)
+194 Design Project I (effective 9/1/09)
+195 Design Project II (effective 9/1/09)
+196 Design Project III (effective 9/1/09)
+
+Biology (BIOL)
+18 Exploring Biotechnology L&L (effective 9/1/09)
+135 Biofuels: Sustainable Energy for the Future? (effective 9/1/09)
+171 Social & Ethical Dimensions of Biotechnology (effective 9/1/09)
+
+Business Administration (BUSN)
+144 Entrepreneurship: Bringing New Ideas to the Marketplace (effective
+9/1/09)
+170 Contemporary Business for Non-Majors (effective 9/1/09)
+
+Child Studies (CHST)
+75 Science, Technology, and Educational Innovation (effective 9/1/09)
+
+Civil Engineering (CENG)
+119 Designing for Sustainable Construction (effective 9/1/09)
+128 Engineering Economics and Business (cross-listed with CENG 208;
+effective 9/1/09)
+148 Structural Systems (cross-listed with CENG 248; effective 9/1/09)
+192A Civil Engineering Project Development (effective 9/1/09)
+193 Detailed Project Design (effective 9/1/09)
+208 Engineering Economics and Project Finance (cross-listed with CENG
+128; effective 9/1/09)
+248 Structural Systems (cross-listed with CENG 148; effective 9/1/09)
+
+Classics (CLAS)
+173 Bath and Body Works (effective 9/1/22)
+
+Computer Engineering (COEN)
+10 Introduction to Programming (effective 1/1/16)
+20 Introduction to Embedded Systems (effective 9/1/09)
+20L Embedded Systems Lab (COEN 20 is a co-requisite; effective 9/1/09)
+21 Introduction to Logic Design (effective 9/1/09)
+21L Logic Design Lab (COEN 21 is a co-requisite; effective 9/1/09)
+*123 Mechatronics (cross-listed as MECH 143 and COEN 123; ELEN 123L is a
+co-requisite; effective 9/1/09)
+150 Introduction to Information Security (effective 9/1/09)
+*194 Design Project I (effective 9/1/09)
+195 Design Project II (effective 9/1/09)
+196 Design Project III (effective 9/1/09)
+250 Information Security Management (effective 9/1/09)
+
+Communication (COMM)
+12 Technology and Communication (effective 9/1/09)
+160A Silicon Valley Communication Technology (effective 9/1/2009)
+161B Communication Media and Technology in Education (effective 9/1/09)
+162A Communication Technology and Policy (effective 9/1/2009)
+
+Dance (DANC)
+49 Dance Composition (effective 9/1/09)
+
+Economics (ECON)
+1 Principles of Microeconomics (effective 9/1/09)
+1E Principles of Microeconomics (effective 9/1/09)
+101 Resources, Food, and the Environment (cross-listed with MGMT 173;
+effective 3/25/19)
+134 African Economic Development (effective 1/1/24)
+139 American Economic History (effective 9/1/09)
+184 The Economics of Intellectual Property (effective 1/1/23)
+185 The Economics of Innovation and Intellectual Property (effective
+9/1/09)
+
+Electrical Engineering (ELEN)
+21 Introduction to Logic Design (effective 9/1/09)
+21L Logic Design Lab (ELEN 21 is a co-requisite; effective 9/1/09)
+50 Electric Circuits I (effective 9/1/09)
+50L Electric Circuits I Lab (ELEN 50 is a co-requisite; effective 9/1/09)
+123 Mechatronics (cross-listed with MECH 143 and COEN 123; ELEN 123L is
+a co-requisite; effective 9/1/09)
+123L Mechatronics Lab (ELEN 123 is a co-requisite; cross listed with
+MECH 143L; effective 9/1/09)
+194 Design Project I (effective 9/1/09)
+195 Design Project II (effective 9/1/09)
+196 Design Project III (effective 9/1/09)
+
+English (ENGL)
+109 Information Culture and Information Society (effective 9/1/09)
+181 Engineering Communications: Practical Writing and Presentation
+Skills for Engineers (effective 9/1/09)
+
+Engineering (ENGR)
+19 Ethics in Technology (effective 9/1/09)
+60 Sustainable Electric Energy (effective 9/1/09)
+110 Engineering Projects Community (effective 9/1/09)
+140 Diversity & Innovation in STEM (effective 03/25/18)
+141 Innovation Theology: An Introduction (effective 3/25/19)
+145 Innovation, Entrepreneurship, and the Evolution of Silicon Valley
+(effective 3/25/20)
+161 Globalization and the Cultures of Innovation and Entrepreneurship
+(cross-listed with MGMT 177; effective 9/1/09)
+165 Creativity: The Art of Innovation (effective Spring 2022)
+166A Introduction to Design Thinking I (effective 1/1/21)
+166B Introduction to Design Thinking II (effective 1/1/21)
+166C Introduction to Design Thinking III (effective 1/1/24)
+169 Social Entrepreneurship (effective Spring 2023)
+169A Social Entrepreneurship I: Technology and Social Innovation
+(effective Fall 2021)
+169B Social Entrepreneurship II: Technology and Social Innovation
+(effective Winter 2022)
+169C Social Entrepreneurship III: Technology and Social Innovation
+(effective Spring 2022)
+171A Product Opportunity Assessment (effective 1/1/23)
+173 Introduction to Business Fundamentals (effective 9/1/25)
+176 Marketing Strategy: Positioning and Messaging (effective Winter 2022)
+178 IP For Engineers (effective Winter 2022)
+179 Intrapreneurship - Innovation From Within (effective Spring 2022)
+
+Environmental Studies & Sciences (ENVS)
+20 The Water Wars of California L&L (effective 1/19/2016)
+21 Introduction to Applied Ecology L&L (effective 9/1/09)
+50 World Geography (cross-listed with ANTH 50; effective 9/1/19)
+80 Energy and the Environment (effective 9/1/09)
+*84 Spirituality and Sustainability (cross-listed with TESP 84;
+effective 9/1/09)
+120 Introduction to Environmental Law and Regulation in the United
+States (effective 9/1/09)
+*122 Environmental Politics and Policy (cross-listed with POLI 157;
+effective 9/1/09)
+*145 Environmental Technology (effective 9/1/09)
+146 Agriculture, Environment and Development: Latin America (effective
+9/1/09)
+
+Experiential Learning for Social Justice (ELSJ)
+134 Seminar in Social Entrepreneurship (effective 3/25/19)
+135 Research in Social Entrepreneurship (effective 3/25/19)
+
+Finance (FNCE)
+150 Intro to FinTech: Innovations and Disruptions to Traditional Finance
+(effective 1/1/25)
+
+History (HIST)
+27/127 Digital History (effective 1/1/21)
+79/179 History of Technology: Steam to Cyborgs (effective 03/25/18)
+85 Introduction to United States Environmental History (effective 9/1/09)
+183 American Capitalism
+184 American Historical Geography (effective 4/1/17)
+
+Management (MGMT)
+6 Business Ethics (effective 9/1/09)
+6H Business Ethics: Honors (effective 9/1/09)
+*8 Constructing a Nonprofit Organization (four units) (/please note/ /if
+MGMT 8 (Business Ethics in Practice) was completed prior to Fall 2015,
+additional courses may be needed to reach the 12 or 16 unit minimum;
+effective 9/1/09)/
+40 Foundational Knowledge of Managing for Sustainability (effective 9/1/17)
+41 Foundational Skills of Managing for Sustainability (effective 1/1/18)
+42 Leading from the Triple Bottom Line (effective 3/25/18)
+110 Global Microfinance for Entrepreneurial Development (effective 1/1/22)
+164 Introduction to Entrepreneurship (effective 9/1/09)
+*165 Building a New Business (effective 1/1/25)
+167 Venture Capitalist Essentials (effective 9/1/25)
+*172 Social Entrepreneurship (effective 9/1/19)
+173 Resources, Food, and the Environment (cross-listed with ECON 101;
+effective 3/25/19)
+175 Flourishing at Work (effective 03/25/23)
+176 Sustainable Food Systems (effective 1/1/22)
+177 Globalization and the Cultures of Innovation and Entrepreneurship
+(cross-listed with ENGR 161; effective 9/1/18)
+*180 Negotiation Skills in Business (effective 1/1/19)
+
+Marketing (MKTG)
+*173 Tech-Driven Sensory Marketing (effective 9/1/25)
+*187 Innovation & New Product Marketing (effective 3/28/14)
+*193 Pricing Strategy (effective 09/1/25)
+
+Mathematics and Computer Science (CSCI)
+3 Intro to Computing & Applications (effective 9/1/09)
+10 Introduction to Computer Science (effective 9/1/09)
+*10B Introduction To Computer Science B (effective 1/1/15)
+
+Mechanical Engineering (MECH)
+10 Graphical Comm in Design (effective 9/1/09)
+10L Graphical Comm in Design Lab (MECH 10 is a co-requisite; effective
+9/1/09)
+143 Mechatronics (cross-listed as ELEN 123 and COEN 123; ELEN 123L is a
+co-requisite; effective 9/1/09)
+143L Mechatronics Lab (MECH 143 is a co-requisite; cross listed with
+ELEN 123L; effective 9/1/09)
+144 Smart Product Design (effective 9/1/09)
+144L Smart Product Design-Lab (MECH 144 is a co-requisite; effective
+9/1/09)
+194 Advanced Design I : Tools (effective 9/1/09)
+195 Advanced Design II : Implementation (effective 9/1/09)
+196 Advanced Design III: Completion and Evaluation (effective 9/1/09)
+
+Modern Languages & Literatures (ITAL)
+*102 Made in Italy (effective 1/1/20)
+
+Music (MUSC)
+115 Experimental Sound Design (effective 9/1/09)
+
+Operations and Management Information Systems (OMIS)
+*105 Database Management Systems (effective 9/1/12)
+*107 Systems Programming (effective 9/1/09)
+*120 Web Programming (effective 3/25/19)
+*137 Object-Oriented Programming (effective 9/1/09)
+
+Philosophy (PHIL)
+3 Ethical Issues in Computing
+3A Ethics in the Digital Age (effective 1/9/2017)
+3H Ethics in the Digital Age (effective 1/9/2017)
+22/H Ethics in the Digital Age/Honors (effective 3/30/17; formerly PHIL 3A)
+26 Ethics in Business (effective 9/1/09; formerly PHIL 6)
+40 Science, Technology and Society (effective 9/1/09; formerly PHIL 80)
+*174 Uncertainty, Conflict & Self Development: Chinese Perspectives
+(effective 01/01/18)
+
+Political Science (POLI)
+123 Global Environmental Politics (effective 9/1/09)
+157 U.S. Environmental Policy (cross-listed with ENVS 122; effective
+9/1/09)
+*163 State and Local Politics (effective 3/25/19)
+167 Making Public Policy (effective 9/1/09)
+
+Public Health (PHSC)
+157 Social Innovation in Public Health (effective 1/9/2017)
+
+Religious Studies
+*RSOC 66 - Fabricating Nature in E Asia (cross-listed with ARTH 66;
+effective 9/1/22)
+TESP 16 Religion, Science and Ecology (effective 9/1/18)
+*TESP 26 Sustainable Theologies (effective 3/25/18)
+*TESP 84 Spirituality & Sustainability (cross-listed with ENVS 84;
+effective 9/1/09)
+*TESP 86 Spirituality and Engineering (effective 9/1/09)
+*TESP 113 Design Theory, Innovation, and Jesuit Principles (effective
+1/1/19)
+*TESP 152 Faith, Ethics & Biodiversity (effective 3/25/18)
+*TESP 176 Nature, Humanity, Spirituality (effective 9/1/09)
+
+Sociology (SOCI)
+*49 Tech, Social Media, and Society (effective 9/1/09)
+60 Introduction to Social Entrepreneurship---Leading Change (effective
+9/1/21)
+130 Social Entrepreneurship: Leading Change (formerly SOCI 60; effective
+9/1/11)
+149 Business, Technology and Society (effective 9/1/09)
+
+Theatre (THTR)
+30 Introduction to Design (effective 9/1/09)
+32 Costume Construction (effective 9/1/09)
+33 Stage Lighting (effective 9/1/09)
+*131 Sound Design (effective 9/1/09)
+133 Scene Design (effective 9/1/09)
+134 Costume Design (effective 9/1/09)
+137 Pattern Drafting and Draping (effective 9/1/09)
+
+* Indicates Course Has Prerequisites
