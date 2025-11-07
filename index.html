@@ -1,16 +1,48 @@
 <style>
-    /* NOTE: We have removed the 'body' styles to prevent conflicts with your main site. */
+    html, body {
+        height: 100%;
+        margin: 0;
+        background: linear-gradient(150deg, #f6edf0 0%, #ffffff 50%, #eef3f8 100%);
+        font-family: "Inter", "Segoe UI", Arial, sans-serif;
+    }
+    :root {
+        color-scheme: light;
+    }
+    .provost-fullscreen {
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: clamp(16px, 4vw, 40px);
+        box-sizing: border-box;
+    }
+    .provost-app-layout {
+        width: 100%;
+        max-width: 1120px;
+        min-height: clamp(560px, 85vh, 880px);
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+        background: linear-gradient(150deg, #faf4f5 0%, #ffffff 45%, #f4f8fb 100%);
+        border-radius: 24px;
+        padding: clamp(18px, 3vw, 28px);
+        box-shadow: 0 28px 55px rgba(18, 26, 40, 0.18);
+    }
+    @media (min-width: 860px) {
+        .provost-app-layout {
+            grid-template-columns: 3fr 2.2fr;
+        }
+    }
     .provost-chat-container {
-        width: 400px;
-        max-width: 100%;
-        height: 600px;
+        width: 100%;
+        min-height: clamp(520px, 70vh, 760px);
+        height: 100%;
         background-color: #ffffff;
-        border-radius: 16px;
-        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+        border-radius: 20px;
+        box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
         display: flex;
         flex-direction: column;
         overflow: hidden;
-        font-family: Arial, sans-serif; /* Set font family here */
     }
     .provost-chat-container .chat-header {
         background: linear-gradient(135deg, #862633, #a63a4a);
@@ -161,29 +193,102 @@
         20% { opacity: 1; }
         100% { opacity: 0.2; }
     }
+    .provost-source-panel {
+        background-color: #ffffff;
+        border-radius: 20px;
+        box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+        display: flex;
+        flex-direction: column;
+        min-height: clamp(520px, 70vh, 760px);
+        height: 90%;
+        padding: clamp(20px, 3vw, 32px);
+        overflow: hidden;
+    }
+    .provost-source-panel h3 {
+        margin: 0;
+        font-size: 1.05rem;
+        font-weight: 600;
+        color: #2f2a2a;
+        letter-spacing: 0.01em;
+    }
+    .provost-source-panel p {
+        margin: 6px 0 18px;
+        font-size: 0.875rem;
+        color: #666;
+    }
+    #provost-source-window {
+        flex-grow: 1;
+        overflow-y: auto;
+        border-radius: 12px;
+        border: 1px solid #e6eaee;
+        padding: 16px 18px;
+        background: #f8fafc;
+    }
+    .source-pill {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        padding: 10px 14px;
+        border-radius: 999px;
+        background-color: #fff;
+        border: 1px solid #d3dce6;
+        color: #3b4754;
+        font-size: 0.875rem;
+        font-weight: 500;
+        margin: 6px 6px 6px 0;
+        box-shadow: 0 2px 6px rgba(15, 23, 42, 0.08);
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+    .source-pill:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 6px 12px rgba(15, 23, 42, 0.12);
+    }
+    .source-pill svg {
+        width: 18px;
+        height: 18px;
+        color: #862633;
+    }
+    .source-empty-message {
+        font-size: 0.9rem;
+        color: #79808c;
+        line-height: 1.5;
+    }
 </style>
 
-<div class="provost-chat-container">
-    <div class="chat-header">
-        <div class="logo"><img src="https://santaclarauniversity.github.io/assets/images/scu_ver1_pos_rgb_2c.png" alt="SCU Logo" width="55" height="38"></div>
-        <div class="header-title">
-            <h2>SCU Provost Assistant</h2>
-        </div>
-        <!-- <div class="close-btn">Close</div> -->
-    </div>
-    <div class="chat-window" id="provost-chat-window">
-        <div class="message assistant">
-            <div class="avatar">P</div>
-            <div class="message-content">
-                <div class="first-line">How can I help you today?</div>
+<div class="provost-fullscreen">
+    <div class="provost-app-layout">
+        <div class="provost-chat-container">
+            <div class="chat-header">
+                <div class="logo"><img src="https://santaclarauniversity.github.io/assets/images/scu_ver1_pos_rgb_2c.png" alt="SCU Logo" width="55" height="38"></div>
+                <div class="header-title">
+                    <h2>SCU Provost Assistant</h2>
+                </div>
+                <!-- <div class="close-btn">Close</div> -->
+            </div>
+            <div class="chat-window" id="provost-chat-window">
+                <div class="message assistant">
+                    <div class="avatar">P</div>
+                    <div class="message-content">
+                        <div class="first-line">How can I help you today?</div>
+                    </div>
+                </div>
+            </div>
+            <div class="chat-input-area">
+                <input type="text" id="provost-user-input" placeholder="Ask me anything...">
+                <button id="provost-send-btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="24" height="24"><path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"></path></svg>
+                </button>
             </div>
         </div>
-    </div>
-    <div class="chat-input-area">
-        <input type="text" id="provost-user-input" placeholder="Ask me anything...">
-        <button id="provost-send-btn">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="24" height="24"><path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"></path></svg>
-        </button>
+        <aside class="provost-source-panel">
+            <div class="panel-header">
+                <h3>Source Library</h3>
+                <p>Documents supporting the latest answer appear here.</p>
+            </div>
+            <div id="provost-source-window">
+                <p class="source-empty-message">Ask a question to view cited documents.</p>
+            </div>
+        </aside>
     </div>
 </div>
 
@@ -194,6 +299,7 @@
         const userInput = document.getElementById('provost-user-input');
         const sendBtn = document.getElementById('provost-send-btn');
         const chatWindow = document.getElementById('provost-chat-window');
+        const sourceWindow = document.getElementById('provost-source-window');
         const API_ENDPOINT = 'https://provost-umber.vercel.app/bot'; // vercel endpoint
 
         const sendMessage = async () => {
@@ -213,14 +319,16 @@
                 if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
                 
                 const data = await response.json();
-                console.log(data)
+                console.log(data);
                 removeTypingIndicator();
                 appendMessage('assistant', data.response);
+                updateSourceWindow(data.response);
 
             } catch (error) {
                 console.error('Error fetching response:', error);
                 removeTypingIndicator();
                 appendMessage('assistant', 'Sorry, an error occurred. Please try again.');
+                updateSourceWindow('');
             }
         };
 
@@ -234,7 +342,7 @@
 
             const messageContent = document.createElement('div');
             messageContent.className = 'message-content';
-            messageContent.innerHTML = marked.parse(text);             
+            messageContent.innerHTML = marked.parse(text);
             messageDiv.appendChild(avatar);
             messageDiv.appendChild(messageContent);
             chatWindow.appendChild(messageDiv);
@@ -264,6 +372,63 @@
             if (typingIndicator) {
                 chatWindow.removeChild(typingIndicator);
             }
+        };
+
+        const updateSourceWindow = (assistantText) => {
+            if (!sourceWindow) return;
+
+            const fragment = document.createDocumentFragment();
+            const cleanPanel = () => {
+                while (sourceWindow.firstChild) {
+                    sourceWindow.removeChild(sourceWindow.firstChild);
+                }
+            };
+
+            const extractSources = (text) => {
+                if (!text) return [];
+                const splitMarker = 'Documents Referred:';
+                const markerIndex = text.lastIndexOf(splitMarker);
+                if (markerIndex === -1) return [];
+
+                const sourceSection = text
+                    .slice(markerIndex + splitMarker.length)
+                    .trim();
+
+                const lines = sourceSection
+                    .split('\n')
+                    .map((line) => line.replace(/^[\-\*\u2022]+\s*/, '').trim())
+                    .filter(Boolean);
+
+                return lines;
+            };
+
+            const sources = extractSources(assistantText);
+            cleanPanel();
+
+            if (!sources.length) {
+                const emptyMessage = document.createElement('p');
+                emptyMessage.className = 'source-empty-message';
+                emptyMessage.textContent = 'No source documents were cited for the latest response.';
+                sourceWindow.appendChild(emptyMessage);
+                return;
+            }
+
+            sources.forEach((sourceName) => {
+                const pill = document.createElement('div');
+                pill.className = 'source-pill';
+
+                pill.innerHTML = `
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                              d="M9 12h6m-3-3v6m-7.5 9h12a1.5 1.5 0 0 0 1.5-1.5V6.75a1.5 1.5 0 0 0-.439-1.06L15.31 3.439A1.5 1.5 0 0 0 14.25 3H4.5A1.5 1.5 0 0 0 3 4.5v16.5A1.5 1.5 0 0 0 4.5 22.5Z" />
+                    </svg>
+                    <span>${sourceName}</span>
+                `;
+
+                fragment.appendChild(pill);
+            });
+
+            sourceWindow.appendChild(fragment);
         };
 
         sendBtn.addEventListener('click', sendMessage);
