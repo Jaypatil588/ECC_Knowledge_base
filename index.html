@@ -67,20 +67,13 @@
     }
     .provost-chat-container .header-title h2 {
         margin: 0;
-        font-size: clamp(1rem, 0.8rem + 0.5vw, 1.125rem); /* Responsive Header (16px-18px) */
+        font-size: clamp(1rem, 0.8rem + 0.5vw, 1.125rem);
     }
     .provost-chat-container .header-title p {
         margin: 0;
         font-size: 12px;
         opacity: 0.9;
     }
-    /* .provost-chat-container .close-btn {
-        position: absolute;
-        top: 10px;
-        right: 20px;
-        font-size: 24px;
-        cursor: pointer;
-    } */
     .provost-chat-container .chat-window {
         flex-grow: 1;
         padding: 20px;
@@ -113,7 +106,6 @@
         padding-left: 10px;
         padding-right: 10px;
         padding-top: 10px;
-
     }
     .provost-chat-container .message.assistant {
         align-self: flex-start;
@@ -125,7 +117,6 @@
         padding-right: 10px;
         padding-bottom: 10px;
     }
-
     .provost-chat-container .message.assistant .message-content {
         background-color: #f1f1f1;
         color: #333;
@@ -134,7 +125,6 @@
         padding-right: 10px;
         padding-top: 10px;
     }
-
     .provost-chat-container .message.user {
         align-self: flex-end;
         flex-direction: row-reverse;
@@ -159,7 +149,7 @@
         border: 1px solid #ccc;
         border-radius: 20px;
         padding: 10px 15px;
-        font-size: clamp(0.875rem, 0.75rem + 0.5vw, 0.9375rem); /* Responsive Input (14px-15px) */
+        font-size: clamp(0.875rem, 0.75rem + 0.5vw, 0.9375rem);
         outline: none;
     }
     .provost-chat-container #provost-user-input:focus {
@@ -263,7 +253,6 @@
                 <div class="header-title">
                     <h2>SCU Provost Assistant</h2>
                 </div>
-                <!-- <div class="close-btn">Close</div> -->
             </div>
             <div class="chat-window" id="provost-chat-window">
                 <div class="message assistant">
@@ -294,13 +283,12 @@
 
 <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 <script>
-    // Using a self-executing function to avoid conflicts with other scripts on your site.
     (function() {
         const userInput = document.getElementById('provost-user-input');
         const sendBtn = document.getElementById('provost-send-btn');
         const chatWindow = document.getElementById('provost-chat-window');
         const sourceWindow = document.getElementById('provost-source-window');
-        const API_ENDPOINT = '/bot'; // relative endpoint to avoid cross-origin issues
+        const API_ENDPOINT = 'https://ecc-knowledge-base.vercel.app/bot';
 
         const sendMessage = async () => {
             const question = userInput.value.trim();
@@ -321,7 +309,7 @@
                     console.error('[ProvostBot] HTTP error:', response.status, response.statusText);
                     throw new Error(`HTTP error! status: ${response.status}`);
                 }
-                
+
                 const data = await response.json();
                 console.log('[ProvostBot] Response payload:', data);
                 removeTypingIndicator();
@@ -357,15 +345,15 @@
         const appendTypingIndicator = () => {
             const typingDiv = document.createElement('div');
             typingDiv.className = 'message assistant typing-indicator';
-            
+
             const avatar = document.createElement('div');
             avatar.className = 'avatar';
             avatar.textContent = 'P';
-            
+
             const messageContent = document.createElement('div');
             messageContent.className = 'message-content';
             messageContent.innerHTML = '<span>Thinking.</span><span>.</span><span>.</span>';
-            
+
             typingDiv.appendChild(avatar);
             typingDiv.appendChild(messageContent);
             chatWindow.appendChild(typingDiv);
@@ -448,3 +436,4 @@
         });
     })();
 </script>
+
