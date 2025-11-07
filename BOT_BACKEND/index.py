@@ -11,7 +11,9 @@ vector_store_details = {
 vector_store_id = os.getenv("VECTORDBID")
 app = Flask(__name__)
 gpt_model = "gpt-4o"
-client = OpenAI()
+api_key=os.getenv("OPENAI_API_KEY")
+#print(api_key)
+client = OpenAI(api_key=api_key)
 
 #toggle guard rails here if any complications in the generations.
 #The main idea is that we use a request to determine relevancy first, then pass on to generation.
@@ -150,7 +152,7 @@ def check():
 
 
 # Note: For local development, you might add the following lines.
-# if __name__ == '__main__':
+#if __name__ == '__main__':
 #     app.run(host='0.0.0.0', port=3001, debug=True)
 
 
